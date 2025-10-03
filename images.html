@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Зображення - Моя Вебсторінка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-container">
+
+        <div class="block" id="block-1">
+            <div class="x-element">
+                <h1>HTML елементи</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="lists.html">Списки</a></li>
+                    <li><a href="images.html" class="active">Зображення</a></li>
+                    <li><a href="links.html">Посилання</a></li>
+                    <li><a href="maps.html">Карти</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="block" id="block-2">
+            <div class="content-wrapper">
+                <h3>Базове зображення</h3>
+                <img src="images/sample1.svg" alt="Перше демонстраційне зображення" class="responsive-image">
+                <p><strong>Alt текст:</strong> "Перше демонстраційне зображення"</p>
+            </div>
+        </div>
+        
+        
+        <div class="block" id="block-3">
+            <div class="content-wrapper">
+                <h3>Зображення з розмірами</h3>
+                <img src="images/sample2.svg" alt="Друге демонстраційне зображення" width="150" height="100" class="fixed-size">
+            </div>
+        </div>
+        
+        <div class="block" id="block-4">
+            <div class="main-content">
+                <h2>Демонстрація зображень (IMG)</h2>
+                
+                <div class="image-gallery">
+                    <figure class="image-item">
+                        <img src="images/sample1.svg" alt="Зображення 1" class="gallery-image">
+                        <figcaption>Зображення 1 - SVG формат</figcaption>
+                    </figure>
+                    
+                    <figure class="image-item">
+                        <img src="images/sample2.svg" alt="Зображення 2" class="gallery-image">
+                        <figcaption>Зображення 2 - з круглим елементом</figcaption>
+                    </figure>
+                </div>
+                
+                <h3>Різні атрибути IMG:</h3>
+                <ul>
+                    <li><strong>src</strong> - шлях до зображення</li>
+                    <li><strong>alt</strong> - альтернативний текст</li>
+                    <li><strong>width/height</strong> - розміри зображення</li>
+                    <li><strong>title</strong> - підказка при наведенні</li>
+                    <li><strong>loading</strong> - режим завантаження (lazy/eager)</li>
+                </ul>
+                
+                <img src="images/sample1.svg" alt="Зображення з підказкою" title="Це підказка при наведенні миші" class="tooltip-image">
+                <p><em>Наведіть мишу на зображення вище, щоб побачити підказку</em></p>
+            </div>
+        </div>
+        
+
+        <div class="block" id="block-5">
+            <div class="content-wrapper">
+                <h3>Адаптивне зображення</h3>
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/sample2.svg">
+                    <img src="images/sample1.svg" alt="Адаптивне зображення" class="responsive-image">
+                </picture>
+                <p>Використання тегу &lt;picture&gt; для адаптивності</p>
+            </div>
+        </div>
+        
+
+        <div class="block" id="block-6">
+            <div class="y-element">HTML елементи</div>
+            <div class="footer-content">
+                <p>&copy; 2025 Демонстраційний сайт - Сторінка зображень</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

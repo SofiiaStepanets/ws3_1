@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Посилання - Моя Вебсторінка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-container">
+
+        <div class="block" id="block-1">
+            <div class="x-element">
+                <h1>HTML елементи</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="lists.html">Списки</a></li>
+                    <li><a href="images.html">Зображення</a></li>
+                    <li><a href="links.html" class="active">Посилання</a></li>
+                    <li><a href="maps.html">Карти</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+
+        <div class="block" id="block-2">
+            <div class="content-wrapper">
+                <h3>Внутрішні посилання</h3>
+                <ul>
+                    <li><a href="index.html">Головна сторінка</a></li>
+                    <li><a href="lists.html">Сторінка списків</a></li>
+                    <li><a href="images.html">Сторінка зображень</a></li>
+                    <li><a href="maps.html">Сторінка карт</a></li>
+                </ul>
+                
+                <h4>Якірні посилання</h4>
+                <ul>
+                    <li><a href="#section1">Розділ 1</a></li>
+                    <li><a href="#section2">Розділ 2</a></li>
+                    <li><a href="#section3">Розділ 3</a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="block" id="block-3">
+            <div class="content-wrapper">
+                <h3>Зовнішні посилання</h3>
+                <ul>
+                    <li><a href="https://www.google.com" target="_blank" rel="noopener">Google (нова вкладка)</a></li>
+                    <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener">MDN Web Docs</a></li>
+                </ul>
+                
+                <h4>Спеціальні посилання</h4>
+                <ul>
+                    <li><a href="mailto:example@email.com">Надіслати email</a></li>
+                    <li><a href="tel:+380123456789">Зателефонувати</a></li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="block" id="block-4">
+            <div class="main-content">
+                <h2>Демонстрація посилань (A)</h2>
+                
+                <section id="section1">
+                    <h3>Розділ 1 - Типи посилань</h3>
+                    <p>Існують різні типи посилань:</p>
+                    <ul>
+                        <li><strong>Абсолютні посилання:</strong> <a href="https://example.com">https://example.com</a></li>
+                        <li><strong>Відносні посилання:</strong> <a href="index.html">index.html</a></li>
+                        <li><strong>Якірні посилання:</strong> <a href="#section2">До розділу 2</a></li>
+                        <li><strong>Email посилання:</strong> <a href="mailto:test@example.com">test@example.com</a></li>
+                    </ul>
+                </section>
+                
+                <section id="section2">
+                    <h3>Розділ 2 - Атрибути посилань</h3>
+                    <p>Важливі атрибути тегу &lt;a&gt;:</p>
+                    <dl>
+                        <dt><strong>href</strong></dt>
+                        <dd>Адреса призначення посилання</dd>
+                        
+                        <dt><strong>target</strong></dt>
+                        <dd>Де відкрити посилання (_blank, _self, _parent, _top)</dd>
+                        
+                        <dt><strong>rel</strong></dt>
+                        <dd>Відношення між поточним документом і цільовим (noopener, nofollow)</dd>
+                        
+                        <dt><strong>title</strong></dt>
+                        <dd>Додаткова інформація про посилання</dd>
+                    </dl>
+                </section>
+                
+                <section id="section3">
+                    <h3>Розділ 3 - Стилізовані посилання</h3>
+                    <p>Посилання можуть мати різні стилі:</p>
+                    <p>
+                        <a href="#" class="button-link">Кнопка-посилання</a>
+                        <a href="#" class="text-link">Текстове посилання</a>
+                        <a href="#" class="underline-link">Підкреслене посилання</a>
+                    </p>
+                </section>
+                
+                <p><a href="#block-1">⬆ Повернутися до початку сторінки</a></p>
+            </div>
+        </div>
+        
+
+        <div class="block" id="block-5">
+            <div class="content-wrapper">
+                <h3>Файлові посилання</h3>
+                <ul>
+                    <li><a href="styles.css" download>Завантажити CSS файл</a></li>
+                    <li><a href="images/sample1.svg" target="_blank">Переглянути SVG</a></li>
+                </ul>
+                
+                <h4>Посилання з зображенням</h4>
+                <a href="images.html" title="Перейти до сторінки зображень">
+                    <img src="images/sample2.svg" alt="Мініатюра" width="100" height="67" style="border: 2px solid #000;">
+                </a>
+                <p><em>Клікніть на зображення</em></p>
+            </div>
+        </div>
+        
+
+        <div class="block" id="block-6">
+            <div class="y-element">HTML елементи</div>
+            <div class="footer-content">
+                <p>&copy; 2025 Демонстраційний сайт - Сторінка посилань</p>
+                <p>
+                    <a href="index.html">Головна</a> |
+                    <a href="lists.html">Списки</a> |
+                    <a href="images.html">Зображення</a> |
+                    <a href="maps.html">Карти</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

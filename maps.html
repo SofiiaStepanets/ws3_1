@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Карти - Моя Вебсторінка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-container">
+
+        <div class="block" id="block-1">
+            <div class="x-element">
+                <h1>HTML елементи</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="lists.html">Списки</a></li>
+                    <li><a href="images.html">Зображення</a></li>
+                    <li><a href="links.html">Посилання</a></li>
+                    <li><a href="maps.html" class="active">Карти</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+
+        <div class="block" id="block-2">
+            <div class="content-wrapper">
+                <h3>Інтерактивна карта</h3>
+                <img src="images/map-image.svg" alt="Демонстраційна карта" usemap="#demo-map" class="map-image">
+                
+                <map name="demo-map">
+                    <area shape="rect" coords="50,50,350,130" href="index.html" alt="Область 1 - Головна" title="Перейти до головної сторінки">
+                    <area shape="rect" coords="50,150,190,250" href="lists.html" alt="Область 2 - Списки" title="Перейти до сторінки списків">
+                    <area shape="rect" coords="210,150,350,250" href="images.html" alt="Область 3 - Зображення" title="Перейти до сторінки зображень">
+                </map>
+                
+                <p><em>Клікніть на кольорові області зображення</em></p>
+            </div>
+        </div>
+        
+
+        <div class="block" id="block-3">
+            <div class="content-wrapper">
+                <h3>Координати областей</h3>
+                <ul>
+                    <li><strong>Червона область:</strong><br>
+                        coords="50,50,350,130"<br>
+                        → <a href="index.html">Головна</a>
+                    </li>
+                    <li><strong>Синя область:</strong><br>
+                        coords="50,150,190,250"<br>
+                        → <a href="lists.html">Списки</a>
+                    </li>
+                    <li><strong>Жовта область:</strong><br>
+                        coords="210,150,350,250"<br>
+                        → <a href="images.html">Зображення</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="block" id="block-4">
+            <div class="main-content">
+                <h2>Демонстрація карт зображень (MAP)</h2>
+                
+                <h3>Що таке карта зображення?</h3>
+                <p>Карта зображення дозволяє створювати кліковані області на зображенні. Кожна область може мати своє посилання.</p>
+                
+                <h3>Основні елементи:</h3>
+                <dl>
+                    <dt><strong>&lt;img usemap="#name"&gt;</strong></dt>
+                    <dd>Зображення з посиланням на карту</dd>
+                    
+                    <dt><strong>&lt;map name="name"&gt;</strong></dt>
+                    <dd>Контейнер для областей карти</dd>
+                    
+                    <dt><strong>&lt;area&gt;</strong></dt>
+                    <dd>Визначає кліковану область</dd>
+                </dl>
+                
+                <h3>Типи форм областей:</h3>
+                <ul>
+                    <li><strong>rect</strong> - прямокутна область (coords="x1,y1,x2,y2")</li>
+                    <li><strong>circle</strong> - кругла область (coords="x,y,radius")</li>
+                    <li><strong>poly</strong> - багатокутна область (coords="x1,y1,x2,y2,x3,y3...")</li>
+                </ul>
+                
+                <h3>Приклад круглої області:</h3>
+                <img src="images/sample2.svg" alt="Зображення з круглою областю" usemap="#circle-map" style="max-width: 200px;">
+                
+                <map name="circle-map">
+                    <area shape="circle" coords="125,75,40" href="links.html" alt="Кругла область" title="Перейти до сторінки посилань">
+                </map>
+                
+                <p><em>Клікніть на білий круг на зображенні вище</em></p>
+                
+                <h3>Переваги карт зображень:</h3>
+                <ul>
+                    <li>Інтерактивність зображень</li>
+                    <li>Зручна навігація</li>
+                    <li>Семантична доступність</li>
+                    <li>Підтримка різних форм областей</li>
+                </ul>
+            </div>
+        </div>
+        
+       
+        <div class="block" id="block-5">
+            <div class="content-wrapper">
+                <h3>Код карти</h3>
+                <pre><code>&lt;img src="image.svg" 
+     usemap="#demo-map"&gt;
+
+&lt;map name="demo-map"&gt;
+  &lt;area shape="rect" 
+        coords="50,50,350,130"
+        href="page1.html"
+        alt="Область 1"&gt;
+  &lt;area shape="circle"
+        coords="100,100,50"
+        href="page2.html"
+        alt="Область 2"&gt;
+&lt;/map&gt;</code></pre>
+            </div>
+        </div>
+        
+        
+        <div class="block" id="block-6">
+            <div class="y-element">HTML елементи</div>
+            <div class="footer-content">
+                <p>&copy; 2025 Демонстраційний сайт - Сторінка карт зображень</p>
+                <p>Спробуйте клікнути на різні області зображень!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
