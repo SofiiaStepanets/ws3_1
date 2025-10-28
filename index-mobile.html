@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна (Mobile) - Моя Вебсторінка</title>
+    <link rel="stylesheet" href="styles-mobile.css">
+</head>
+<body>
+    <!-- Page Switcher -->
+    <div class="page-switcher">
+        <a href="index.html">Оригінал</a>
+        <a href="index-flex.html">Flexbox</a>
+        <a href="index-grid.html">Grid</a>
+        <a href="index-basic.html">Без Flex/Grid</a>
+        <a href="index-email.html">Email</a>
+        <a href="index-mobile.html" class="active">Mobile</a>
+    </div>
+
+    <div class="mobile-container">
+        <!-- Header Block -->
+        <header class="block" id="block-1">
+            <div class="header-content">
+                <div class="x-element">
+                    <h1>HTML елементи</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                        <li><a href="lists.html">Списки</a></li>
+                        <li><a href="images.html">Зображення</a></li>
+                        <li><a href="links.html">Посилання</a></li>
+                        <li><a href="maps.html">Карти</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Welcome Section -->
+        <section class="block" id="block-2">
+            <div class="content-wrapper">
+                <h2>Ласкаво просимо</h2>
+                <p>Це головна сторінка нашого веб-сайту</p>
+                <p>Використовуйте навігацію вгорі для переходу між розділами</p>
+            </div>
+        </section>
+
+        <!-- Demo Section -->
+        <section class="block" id="block-3">
+            <div class="demo-header">
+                <h2>Демонстраційний сайт</h2>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="block" id="block-4">
+            <div class="main-content">
+                <h1>Демонстраційний сайт</h1>
+                <p>Цей сайт демонструє використання різних HTML елементів:</p>
+                <ul class="feature-list">
+                    <li>Списки (UL, OL, LI)</li>
+                    <li>Зображення (IMG)</li>
+                    <li>Посилання (A)</li>
+                    <li>Карти зображень (MAP)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Detailed Content -->
+        <section class="block" id="block-5">
+            <div class="content-wrapper">
+                <h3>Списки (UL, OL, LI)</h3>
+                <p>UL (Unordered List) — використовується для створення неупорядкованих списків, де пункти не мають конкретного порядку.</p>
+                <p>OL (Ordered List) — застосовується для створення упорядкованих списків, де пункти мають визначену нумерацію або індексацію.</p>
+                <p>LI (List Item) — елемент списку, що позначає окремий пункт у UL або OL.</p>
+                
+                <h3>Зображення (IMG)</h3>
+                <p>IMG — елемент для вставки зображень на веб-сторінку. Він використовується для відображення графічних файлів і має атрибути для визначення джерела зображення, розмірів та альтернативного тексту.</p>
+                
+                <h3>Посилання (A)</h3>
+                <p>A — тег для створення гіперпосилань. Використовується для того, щоб зв'язати одну веб-сторінку з іншою або з зовнішнім ресурсом. Посилання визначається через атрибут href, який вказує на URL-адресу.</p>
+                
+                <h3>Карти зображень (MAP)</h3>
+                <p>MAP — тег, що дозволяє створювати інтерактивні карти зображень. Він визначає активні області на зображенні, які можуть виконувати певні дії при натисканні, наприклад, перенаправлення на інші сторінки. Для кожної активної області використовується тег AREA.</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="block" id="block-6">
+            <div class="footer-content">
+                <p>&copy; 2025 Демонстраційний сайт</p>
+            </div>
+            <div class="y-element">HTML елементи</div>
+        </footer>
+    </div>
+</body>
+</html>
